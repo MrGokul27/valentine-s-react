@@ -45,7 +45,7 @@ function Valentine() {
         </button>
       </div>
 
-      <p className="hint">"No" seems a bit shy 😼</p>
+      <p className="hint">"No" seems a bit shy! 😼</p>
     </div>
   );
 }

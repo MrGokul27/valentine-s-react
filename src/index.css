@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #ffd6e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- COMMON CENTER ---------- */
+.center {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 20px;
+}
+
+/* ---------- INPUT & BUTTON ---------- */
+.form-input {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+input {
+  padding: 14px 16px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  max-width: 280px;
+}
+
+button {
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* ---------- CARD ---------- */
+.card {
+  background: white;
+  width: min(90vw, 520px); /* responsive width */
+  min-height: 360px; /* bigger card */
+  border-radius: 28px;
+  text-align: center;
+  padding: 40px 30px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- CAT ICON ---------- */
+.cat {
+  font-size: 56px;
+}
+
+/* ---------- TEXT ---------- */
+.card h2 {
+  font-size: clamp(20px, 3vw, 26px);
+  margin-top: 10px;
+}
+
+/* ---------- BUTTON AREA ---------- */
+.buttons {
+  margin-top: 30px;
+  position: relative;
+  height: 140px;
+}
+
+/* ---------- YES BUTTON ---------- */
+.yes {
+  background: hotpink;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+/* ---------- NO BUTTON ---------- */
+.no {
+  position: absolute;
+  background: #eee;
+  transition:
+    top 0.15s ease,
+    left 0.15s ease;
+}
+
+/* ---------- HINT ---------- */
+.hint {
+  font-size: 14px;
+  color: gray;
+  margin-top: 10px;
+}
+
+/* ---------- MOBILE TWEAKS ---------- */
+@media (max-width: 480px) {
+  .card {
+    min-height: 340px;
+    padding: 30px 20px;
+  }
+
+  .cat {
+    font-size: 48px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+}

@@ -7,8 +7,8 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<NameForm />} />
-      <Route path="/valentine" element={<Valentine />} />
-      <Route path="/yay" element={<Yay />} />
+      <Route path="/love/:id" element={<Valentine />} />
+      <Route path="/love/:id/yay" element={<Yay />} />
     </Routes>
   );
 }

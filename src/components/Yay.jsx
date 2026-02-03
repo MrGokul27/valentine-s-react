@@ -6,10 +6,10 @@ function Yay() {
   return (
     <div className="center">
       <h1>🎉 YAYYYYY!!! 🎉</h1>
-      <h2>You said YES 💖</h2>
+      <h2>You said YES, let's go on a date! 💖</h2>
       <p>A promise for forever 💖💍🥰</p>
 
-      <button
+      {/* <button
         style={{
           marginTop: "20px",
           background: "hotpink",
@@ -18,7 +18,7 @@ function Yay() {
         onClick={() => navigate("/")}
       >
         Try Again 💌
-      </button>
+      </button> */}
     </div>
   );
 }

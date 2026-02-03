@@ -39,6 +39,7 @@ function Valentine() {
           className="no"
           style={{ top: noPos.top, left: noPos.left }}
           onMouseEnter={moveNoButton}
+          onTouchStart={moveNoButton}
         >
           No
         </button>
